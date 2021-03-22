@@ -1,6 +1,6 @@
 {
   "name": "@arlequins/beat-js-slider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "beat-js-slider modules",
   "main": "dist/beat-js-slider.js",
   "types": "dist/index.d.ts",
