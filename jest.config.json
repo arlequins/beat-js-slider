@@ -1,0 +1,37 @@
+{
+  "preset": "ts-jest",
+  "verbose": true,
+  "transform": {
+    ".(ts|tsx)": "ts-jest"
+  },
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$",
+  "moduleFileExtensions": [
+    "js",
+    "ts",
+    "tsx"
+  ],
+  "moduleNameMapper": {
+    "\\.(css|less|sass|scss)$": "<rootDir>/config/__mocks__/styleMock.js",
+    "^typings/(.*)$": "<rootDir>/typings/$1",
+    "common": "<rootDir>/typings/common.d",
+    "^@app/(.*)$": "<rootDir>/src/$1"
+  },
+  "globals": {
+    "window": {},
+    "ts-jest": {
+      "tsconfig": "./tsconfig.json"
+    }
+  },
+  "setupFiles": [
+    "./jest.stubs.js"
+  ],
+  "setupFilesAfterEnv": [
+    "./jest.tests.js"
+  ],
+  "testMatch": null,
+  "coverageReporters": [
+    "json-summary",
+    "text",
+    "lcov"
+  ]
+}
